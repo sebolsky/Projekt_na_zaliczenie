@@ -22,14 +22,18 @@
             <label class="buttons" for="weight">Podaj swoją wage w kg</label>
             <input type="number" id="weight" name="weight">
             
-            <select id="names_of_medicines" >
+            <select id="names_of_medications" >
               
-                <option>Paracetamol</option>
-                <option>Ibuprofen</option>
+                <option value="paracetamol">Paracetamol</option>
+                <option value="ibuprofen">Ibuprofen</option>
                 
             </select>
-            <button id="count">Oblicz</button>
+            <button onclick="wyliczDawkeLeku()" type="button" id="count">Oblicz</button>
           </form>
+        </div>
+        <div id="amount">
+            
+
         </div>
     </div>
     
