@@ -10,10 +10,7 @@
     <title>Pewna porcja leków</title>
 </head>
 <body>
-    <div id="title">
-    <h1>Dopasuj dawkę leku dla siebie</h1>
-    </div>
-
+    
     <script src="file.js"></script> 
     
     <div id="window">
@@ -22,7 +19,7 @@
             <label class="buttons" for="weight">Podaj swoją wage w kg</label>
             <input type="number" id="weight" name="weight">
             
-            <select id="names_of_medications" >
+            <select onchange="wyliczDawkeLeku()" id="names_of_medications" >
               
                 <option value="paracetamol">Paracetamol</option>
                 <option value="ibuprofen">Ibuprofen</option>
@@ -30,6 +27,7 @@
             </select>
             <button onclick="wyliczDawkeLeku()" type="button" id="count">Oblicz</button>
           </form>
+          
         </div>
         <div id="amount">
             
